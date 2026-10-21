@@ -1,10 +1,10 @@
-let nome_poke = nome()  
-let numero_poke = parseInt(numero())  
-let tipo_poke = tipo()  
-let vantagens_poke = vantagens()  
-let fraqueza_poke = fraqueza()  
-let imagem_poke = imagem()
-let espaco_time = document.getElementById("time")  
-let espaco_lista = document.getElementById("lista")
-let pokemon = Pokemon()
-let pokemontime = new Array()
+let lista = document.getElementById("lista")
+pokeBank.forEach(pokemon => {
+    lista.innerHTML += `
+    <div class="pokemonlista">
+    <p class="text">${pokemon.nome}</h2>
+    <p class ="text"> #${pokemon.numero}</p>
+    <img src="${pokemon.imagem}" alt="${pokemon.nome}">
+    </div>
+    `;
+    });

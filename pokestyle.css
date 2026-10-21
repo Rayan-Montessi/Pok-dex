@@ -1,11 +1,34 @@
+@font-face {
+    font-family: minecraft;
+    src: url(./extras/Minecraft.ttf);
+}
+body{
+    background-color: #2a2438 ;
+}
+
+.text{
+    font-family: 'minecraft';
+    color: white;
+    letter-spacing: 3.5px;
+}
+
 #cabecalho{
     background-color: #5c5470 ;
 }
  
-#principal{
-    background-color: #2a2438 ;
+#lista{
+    display: flex;
+    background-color: #403852 ;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    flex-wrap: wrap ;
+    gap: 15px;
 }
 
-#lista{
-    background-color: #403852 ;
+#lista img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
 }

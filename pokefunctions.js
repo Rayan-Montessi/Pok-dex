@@ -4,7 +4,9 @@ pokeBank.forEach(pokemon => {
     <div class="pokemonlista">
     <p class="text">${pokemon.nome}</h2>
     <p class ="text"> #${pokemon.numero}</p>
+    <button class="botaolista">
     <img src="${pokemon.imagem}" alt="${pokemon.nome}">
+    </button>
     </div>
     `;
     });

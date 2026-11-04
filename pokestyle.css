@@ -37,34 +37,53 @@ body{
     flex-wrap: wrap ;
     flex-direction: row;
     padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    gap: 15px;
+    gap: 30px;
     text-align: center;
     align-items: center;
     justify-content: center;
     background-color: #403852 ;
+    text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.7);
 }
 
-#lista img {
+#lista img{
     width: 120px;
     height: 120px;
     margin: 15px;
     object-fit: contain;
-    border: 3px solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 50%;
     padding: 4px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: transform 0.2s ease-in-out , box-shadow 0.2s ease-in-out;
+    background-color:#5c5470;
+    background-attachment: fixed;
 }
 
-#lista img:hover {
+
+#lista .pokemonlista{
+    background-color: #403852;
+    object-fit: contain;
+    border: 2px solid #ccc;
+    padding: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease-in-out , box-shadow 0.2s ease-in-out;
+    
+}
+
+#lista .pokemonlista:hover {
     transform: translateY(-10px) scale(1.2);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.2), /*cima*/
+                8px -8px 16px rgba(0, 0, 0, 0.2), /*cima - direita*/
+                8px 0px 16px rgba(0, 0, 0, 0.2), /*direita*/
+                8px 8px 16px rgba(0, 0, 0, 0.2), /*direita-baixo*/
+                0 8px 16px rgba(0, 0, 0, 0.2), /*baixo*/
+                -8px 8px 16px rgba(0, 0, 0, 0.2), /*baixo-esquerda*/
+                -8px 0px 16px rgba(0, 0, 0, 0.2), /*esquerda*/
+                -8px -8px 16px rgba(0, 0, 0, 0.2); /*esquerda-cima*/
     filter: brightness(1.1);
 }
-#lista button{
-    background: none; 
+
+#lista .pokemonlista button{
     background-color: transparent;
-    border: none;
+    ;
 }

@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    margin: 5px;
+    min-height: 100%;
+}
+
 body{
     background-color: #2a2438 ;
 }
@@ -15,6 +20,9 @@ body{
     font-family: 'minecraft';
     color: white;
     letter-spacing: 3.5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #cabecalho{
@@ -22,6 +30,8 @@ body{
     height: 100px;
     width: 100%;
     margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 12px;
 }
  
 #divlista{
@@ -91,16 +101,31 @@ body{
     ;
 }
 
-#time{
+#divtime {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #2a2438;
+    border: 1px solid  #5c5470;
+    border-radius: 12px;
+    gap: 50px;
+    margin: 5px;
+}
+
+#time {
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     flex-direction: row;
-    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 10px;
     gap: 30px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: #403852 ;
+    background-color: #2a2438;
     text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.7);
 }
 
@@ -115,13 +140,14 @@ body{
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: transform 0.2s ease-in-out , box-shadow 0.2s ease-in-out;
     background-color:#5c5470;
-    background-attachment: fixed;
+    
 }
 
 #time .pokemontime button{
     background-color: transparent;
     ;
 }
+
 
 #pietroeasteregg img{
     display: flex;

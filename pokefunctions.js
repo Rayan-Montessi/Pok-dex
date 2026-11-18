@@ -31,6 +31,7 @@ function adicionatime(numero) {
 <button class = "botaotime" onclick = "removetime(${pokemon.numero})">
     <img src="${pokemon.imagem}" alt="${pokemon.nome}">
     <p class="text">${pokemon.nome}</p>
+    <p class = "text">${pokemon.tipo}<p>
     <p class ="text"> #${pokemon.numero}</p>
 </button>
 </div>`;
@@ -51,6 +52,7 @@ function removetime(numero) {
 <button class = "botaotime" onclick = "removetime(${pokemon.numero})" >
     <img src="${pokemon.imagem}" alt="${pokemon.nome}">
     <p class="text">${pokemon.nome}</p>
+    <p class = "text">${pokemon.tipo}<p>
     <p class ="text"> #${pokemon.numero}</p>
 </button>
 </div>`;

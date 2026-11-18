@@ -23,7 +23,7 @@ class Pokemon{
     get imagem(){ return this.#imagem }
 }
 
-const bulbasaur = new Pokemon("Bulbasaur", 1, ["Grama", "Veneno"], ["Água", "Grama", "Terra", "Pedra", "Fada"], ["Fogo", "Gelo", "Voador", "Psíquico"], "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png");
+const bulbasaur = new Pokemon("Bulbasaur", 1, ["Grama/Veneno"], ["Água", "Grama", "Terra", "Pedra", "Fada"], ["Fogo", "Gelo", "Voador", "Psíquico"], "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png");
 
 const ivysaur = new Pokemon("Ivysaur", 2, ["Grama", "Veneno"], ["Água", "Grama", "Terra", "Pedra", "Fada"], ["Fogo", "Gelo", "Voador", "Psíquico"], "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png");
 

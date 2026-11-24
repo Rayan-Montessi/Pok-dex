@@ -1,36 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex</title>
-    <link rel="stylesheet" href="pokestyle.css">
-</head>
+    <link rel="stylesheet" href="pokestyle.css" />
+  </head>
 
-<body>
+  <body>
     <header id="cabecalho">
-        <img src="./extras/bolas/pokeball.png" alt="Pokébola" id="pokeball" class="bola">
-        <h1 class="text">Pokedex - Kanto</h1>
-        <img src="./extras/bolas/pokeball.png" alt="Pokébola" id="pokeball" class="bola">
+      <img
+        src="./extras/bolas/pokeball.png"
+        alt="Pokébola"
+        id="pokeball"
+        class="bola"
+      />
+      <h1 class="text">Pokedex - Kanto</h1>
+      <img
+        src="./extras/bolas/pokeball.png"
+        alt="Pokébola"
+        id="pokeball"
+        class="bola"
+      />
     </header>
     <main id="principal">
-
-        <div id="divtime">
-            <img src="./extras/bolas/greatball.png" alt="greatball" id="greatball" class="bola">
+      <div id="divtime">
+        <div id="alttime">
+          <img
+            src="./extras/outros/inspedra.png"
+            alt="Insignia da Pedra"
+            id="inspedra"
+            class="ins"
+          />
+          <div id="title">
+            <img
+              src="./extras/bolas/greatball.png"
+              alt="greatball"
+              id="greatball"
+              class="bola"
+            />
             <h1 class="text">Meu Time</h1>
-            <img src="./extras/bolas/greatball.png" alt="greatball" id="greatball" class="bola">
-            <div id="time">
-            </div>
-        </div>  
-
-        <div id="divlista">
-            <img src="./extras/bolas/ultraball.png" alt="ultraball" id="ultraball" class="bola">
-            <h1 class="text">Pokemons</h1>
-            <img src="./extras/bolas/ultraball.png" alt="ultraball" id="ultraball" class="bola">
-            <div id="lista"></div>
+            <img
+              src="./extras/bolas/greatball.png"
+              alt="greatball"
+              id="greatball"
+              class="bola"
+            />
+          </div>
+          <img
+            src="./extras/outros/inssol.png"
+            alt="Insignia do Sol"
+            id="inssol"
+            class="ins"
+          />
         </div>
+        <div id="time"></div>
+      </div>
+
+      <div id="divlista">
+        <div id="topo_lista">
+          <select id="filtroTipo">
+            <option value="Todos">Todos os tipos</option>
+            <option value="Normal">Normal</option>
+            <option value="Fogo">Fogo</option>
+            <option value="Água">Água</option>
+            <option value="Elétrico">Elétrico</option>
+            <option value="Grama">Grama</option>
+            <option value="Gelo">Gelo</option>
+            <option value="Lutador">Lutador</option>
+            <option value="Veneno">Veneno</option>
+            <option value="Terra">Terra</option>
+            <option value="Voador">Voador</option>
+            <option value="Psíquico">Psíquico</option>
+            <option value="Inseto">Inseto</option>
+            <option value="Pedra">Pedra</option>
+            <option value="Fantasma">Fantasma</option>
+            <option value="Dragão">Dragão</option>
+            <option value="Sombrio">Sombrio</option>
+            <option value="Aço">Aço</option>
+            <option value="Fada">Fada</option>
+          </select>
+          <div id="titulo_lista">
+            <img
+              src="./extras/bolas/ultraball.png"
+              alt="ultraball"
+              id="ultraball"
+              class="bola"
+            />
+            <h1 class="text">Pokemons</h1>
+            <img
+              src="./extras/bolas/ultraball.png"
+              alt="ultraball"
+              id="ultraball"
+              class="bola"
+            />
+          </div>
+          <input
+            type="search"
+            id="pesquisa"
+            placeholder="Pesquisar Pokemon..."
+          />
+        </div>
+        <div id="lista"></div>
+      </div>
     </main>
-<script src="pokebank.js"></script>
-<script src="pokefunctions.js"></script>
-</body>
+    <script src="pokebank.js"></script>
+    <script src="pokefunctions.js"></script>
+  </body>
 </html>
